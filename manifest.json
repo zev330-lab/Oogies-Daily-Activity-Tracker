@@ -1,0 +1,21 @@
+{
+  "name": "Oogie's Activity Tracker",
+  "short_name": "Oogie Tracker",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f4ef",
+  "theme_color": "#d49b42",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

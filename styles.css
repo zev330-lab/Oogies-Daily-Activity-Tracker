@@ -1,0 +1,178 @@
+/* Colour palette inspired by Oogie's golden fur and natural tones */
+:root {
+  /* Primary golden colour for header and highlights */
+  --primary: #d49b42;
+  /* Secondary sage green for secondary elements */
+  --secondary: #9aa871;
+  /* Light cream background */
+  --background: #f7f4ef;
+  /* Accent brown/red for buttons */
+  --accent: #b45f4f;
+  /* Dark text colour */
+  --text: #2e2e2e;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  height: 100%;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  border-color: var(--accent);
+}
+
+main {
+  padding: 1rem;
+  min-height: calc(100vh - 160px);
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Dashboard summary styling */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="time"],
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+}
+
+.checkbox-grid label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: normal;
+}
+
+button.submit {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button.submit:hover {
+  background: #974c44;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: var(--primary);
+  color: white;
+}
+
+tr:nth-child(even) td {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.message {
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
